@@ -1,0 +1,77 @@
+
+.listItem{
+    display:flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    background: rgba(255, 131, 90, 0.5);
+    color: #000000;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.blog-listItem{
+    width: auto;
+    height: auto;
+    background: rgba(255, 131, 90, 0.5);
+    color: #000000;
+    padding: 0.25rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.blog-item{
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   text-align: left;
+}
+
+.blog-item h1{
+    padding: 10px;
+}
+
+.blog-item h4{
+    text-align: right;
+    padding-right: 20px;
+    font-size: 20px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+    color: #6c6c6c;
+}
+
+.listItem h1{
+    flex:  1 1 10rem;
+    padding: 1rem;
+    vertical-align: center;
+    font-size: 1.25rem;
+}
+
+.listItem h2{
+    vertical-align: center;
+    margin-right: 5rem;
+    font-size: 3rem;
+}
+
+.listItem p{
+    flex:  1 1 3rem;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    vertical-align: center;
+}
+
+.listItem button{
+    background: transparent;
+    border:none;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #d4551a;
+}
+
+.listItem button:hover{
+    /* background: transparent; */
+    color:black;
+}

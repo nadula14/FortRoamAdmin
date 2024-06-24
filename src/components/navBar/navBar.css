@@ -1,0 +1,136 @@
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    top: 0;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 15px 0 rgb(16, 16, 16);
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99;
+}
+.applogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title h1{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display : flex ;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+
+    
+}
+.nav-link{
+    font-size: 20px;
+    display: flex;
+    gap: 8px;
+    font-weight: 400;
+    padding: 10px 15px;
+    cursor: pointer;
+   
+}
+.nav-link:hover{
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 4px;
+}
+.nav-toggler div{
+    width: 1.6rem;
+    height: 0.15rem;
+    margin: 0.3rem;
+    background: black;
+    transition: 0.4s ease-in;
+}
+.nav-toggler {
+    cursor: pointer;
+    display: none;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .nav {
+        position: fixed; 
+        z-index: 9; 
+
+    }
+    .nav-menu{
+        display: flex;
+       flex-direction: column;
+       background-color: #fff;
+       width: 100%;
+       height: auto;
+       position: absolute;
+       padding: 100px 0 40px 0;
+       top: 0;
+       left: 0;
+       opacity: 0.85;
+       margin: 0;
+       justify-content: flex-start;
+        transform: translateX(-120%);
+       transition: all 0.5s ease-in;
+       z-index: -1;
+       gap: 1.5rem;
+    
+    }
+    .nav-active{
+       z-index: -1;
+       border-radius: 20px;
+       
+    }
+  
+    .nav-link{
+        font-size: 1.2rem;
+        display: block;
+    
+    }
+    .nav-link:hover{
+        width: 300px;
+        text-align: center;
+    }
+    
+    .nav-toggler{
+        display: block;
+    }
+   
+}
+.nav-active{
+    transform: translateX(0);
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px,-6px);
+}

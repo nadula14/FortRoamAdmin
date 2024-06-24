@@ -1,0 +1,142 @@
+.singlePost{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.singlePostWrapper{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+.delete-btn{
+    padding: 10px;
+    background-color: #E25E3E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 8rem;
+}
+
+.delete-btn:hover{
+    background-color: #9c1f00;
+
+}
+
+.myBlogSinglePost{
+    padding-top:  2rem;
+    justify-content: space-between;
+    margin: 4rem 20rem 5rem 20rem;
+}
+
+.myBlogSinglePostWrapper{
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;    
+}
+
+.singlePostImg{
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 700px;
+}
+.singlePostTitle{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.singlePostEditndlt{
+    display: flex;
+    margin: 0.8rem;
+}
+.editIcon{
+    font-size: 1.75rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    color: #E25E3E;
+}
+.deleteIcon {
+    font-size: 1.65rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    color: #E25E3E;
+}
+
+.editIcon:hover {
+    color: black; 
+}
+.deleteIcon:hover {
+    color: black; 
+}
+
+.singlePostInfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    color: var(--main-color);
+    font-family: 'Varela Round', sans-serif;
+}
+
+.singlePostDesc{
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Lora', serif;
+    line-height: 25px;
+    text-align: justify;
+}
+.singlePostDesc::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 1rem;
+    min-width: 600px;
+}
+
+.recentPostsContainer {
+    width: 32%; 
+}
+.recentPostsContainer h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 768px){
+    .recentPostsContainer {
+        display: none;
+    }
+    .singlePost {
+        flex-direction: row;
+    }
+
+    .singlePostWrapper {
+        width: 90%;
+    }
+
+    .recentPostsContainer {
+        width: 30%;
+        margin-top: 0;
+        margin-left: 1rem; 
+    }
+} 
+
+.writeImg {
+    width: 40rem;
+    height: 30rem; 
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

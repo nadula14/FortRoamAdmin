@@ -1,0 +1,145 @@
+.add-place{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+form{
+    margin: 2rem;
+    width: 60%;
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label{
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 500;
+    padding-right: 1rem;
+}
+
+.addimage-text{
+    cursor: pointer;
+}
+
+form .box{
+    flex: 5;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    background: rgba(255, 131, 90, 0.5);
+    color: black;
+    text-transform: none;
+    font-size: 1.25rem;
+    width:100%;
+    border-radius: .5rem;
+} 
+
+form .box::placeholder{
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.25rem;
+}
+
+form .box2::placeholder{
+    text-transform: capitalize;
+    color: black;
+    font-size: 1.25rem;
+}
+
+form .message{
+    height: 10rem;
+    resize: vertical ;
+}
+
+.form-row {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    flex: 1; 
+}
+
+.form-row .box1{
+    flex: 2;
+    padding:0.5rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+    background: rgba(255, 131, 90, 0.5);
+    color: black;
+    text-transform: none;
+    font-size: 1.25rem;
+    width:25%;
+    border-radius: .5rem;
+    border: 2px solid black;
+}
+
+.form-row .box2{
+    flex: 5;
+    text-align: left;
+    padding:0.5rem;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+    background: rgba(255, 131, 90, 0.5);
+    color: black;
+    text-transform: none;
+    font-size: 1.25rem;
+    width:30%;
+    border-radius: .5rem;
+}
+
+.form-row .box2:focus{
+    border-color: black;
+}
+
+.form-row .box2::placeholder{
+    color: black;
+    font-size: 1.25rem;
+}
+
+option {
+    background-color: white;
+}
+
+textarea {
+    border: 2px solid black;
+}
+
+.btn{
+    text-align: center;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.writeImg {
+    width: 40rem;
+    height: 30rem; 
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fileInputbox{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.fileInputbox h4{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+
+.edit-section{
+    margin-bottom: 5rem;
+}
