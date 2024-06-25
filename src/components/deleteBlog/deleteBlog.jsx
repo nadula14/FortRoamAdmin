@@ -14,7 +14,7 @@ function DeleteBlog() {
 
     const handleDelete = async () => {
         try {
-            await axios.delete(`http://localhost:3010/blog/delete/${blog._id}`);
+            await axios.delete(`https://fortroam-server.onrender.com/delete/${blog._id}`);
             alert("Blog successfully deleted!");
             navigate('/blogs', { replace: true });
             

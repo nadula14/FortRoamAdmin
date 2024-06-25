@@ -15,7 +15,7 @@ function PlacesScreen() {
 
   const handleClick = async (category) => {
     try {
-      const response = await axios.get(`http://localhost:3010/place/types/${category}`);
+      const response = await axios.get(`https://fortroam-server.onrender.com/place/types/${category}`);
       setPlaces(response.data);
       setCategory(category);
     } catch (error) {

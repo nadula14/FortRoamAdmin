@@ -46,7 +46,7 @@ function EditPlace() {
         }
 
         axios
-            .put(`http://localhost:3010/place/${place._id}`, formData, {
+            .put(`https://fortroam-server.onrender.com/place/${place._id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -64,7 +64,7 @@ function EditPlace() {
 
     function handleDelete(event) {
         event.preventDefault();
-        axios.delete(`http://localhost:3010/place/${place._id}`)
+        axios.delete(`https://fortroam-server.onrender.com/place/${place._id}`)
         .then((result) => {
             console.log(result);
             alert("Place successfully deleted!");

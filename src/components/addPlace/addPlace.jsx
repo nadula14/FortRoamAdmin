@@ -45,7 +45,7 @@ function AddPlace() {
         formData.append('latitude', latitude);
         formData.append('longitude', longitude);
     
-        axios.post('http://localhost:3010/place', formData, {
+        axios.post('https://fortroam-server.onrender.com/place', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }

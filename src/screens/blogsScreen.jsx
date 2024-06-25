@@ -8,7 +8,7 @@ function BlogsScreen() {
   const navigate = useNavigate();
 
   useEffect(() => {
-      fetch("http://localhost:3010/blog/")
+      fetch("https://fortroam-server.onrender.com/blog/")
         .then((response) => response.json())
         .then((data) => {
           setBlogs(data); 

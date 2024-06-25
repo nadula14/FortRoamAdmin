@@ -11,7 +11,7 @@ function PlaceSearchResultScreen() {
     const searchTerm = location.search ? location.search.split('=')[1] : '';
 
     useEffect(() => {
-        fetch("http://localhost:3010/place/")
+        fetch("https://fortroam-server.onrender.com/place/")
           .then((response) => response.json())
           .then((data) => {
             setPlaces(data); 
